@@ -1,0 +1,9 @@
+.hero {
+    background: url("../Images/kim-taehyung-main.webp") no-repeat center center/cover;
+    height: 87vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    color: rgb(0, 0, 0);
+  }
