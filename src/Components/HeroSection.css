@@ -1,9 +1,50 @@
 .hero {
-    background: url("../Images/kim-taehyung-main.webp") no-repeat center center/cover;
-    height: 87vh;
-    display: flex;
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
-    color: rgb(0, 0, 0);
+  background: url("../Images/kim-taehyung-main.webp") no-repeat center center;
+  background-size: 100%; /* Reduce image size */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90.5vh;
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+}
+
+  .hero-content {
+    text-align: center;
+    color: white;
+    margin-left: 3%;
+    color: #3d0951;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    text-transform: uppercase; 
+    font-family: "Great Vibes", cursive; 
+
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-right: 40%;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .hero-btn {
+    background-color: #3d0951;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    font-family: "Montserrat", sans-serif;
+    margin-right: 75%;
+  }
+  .hero-btn:hover{
+    background-color:rgba(108, 84, 125, 0.667);
+    color:  #3d0951;
   }

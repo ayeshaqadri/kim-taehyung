@@ -6,10 +6,10 @@ function navbar() {
   return (
     <Navbar expand="lg" className="navbar-custom"> 
       <Container>
-        <Navbar.Brand href="#" style={{ color: "white", fontWeight: "bold" }}>
+        <Navbar.Brand href="#" style={{ color: "purple", fontWeight: "bold" }}>
           V's World
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: "#0d021f", background: "white" }}/>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ color: "purple", background: "white" }}/>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="#">Home</Nav.Link>
