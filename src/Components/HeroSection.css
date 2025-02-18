@@ -31,20 +31,143 @@
     margin-right: 40%;
     font-family: "Montserrat", sans-serif;
   }
+
+  button {
+    margin: 20px;
+    margin-right: 160% ;
+
+  }
+  .btn-1 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px ;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+/* 8 */
+.btn-purple {
+  background-color: #f0ecfc;
+background-image: linear-gradient(315deg, #76349d 0%, #3d0951 74%);
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-purple span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-purple:before,
+.btn-purple:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #561271b4;
+  transition: all 0.3s ease;
+}
+.btn-purple:before{
+   height: 0%;
+   width: 2px;
+}
+.btn-purple:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-purple:hover:before {
+  height: 100%;
+}
+.btn-purple:hover:after {
+  width: 100%;
+}
+.btn-purple:hover{
+  background: transparent;
+}
+.btn-purple span:hover{
+  color: rgb(96, 57, 106);
+}
+.btn-purple span:before,
+.btn-purple span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #3d0951ab;
+  transition: all 0.3s ease;
+}
+.btn-purple span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-purple span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-purple span:hover:before {
+  height: 100%;
+}
+.btn-purple span:hover:after {
+  width: 100%;
+}
+
+/* animations */
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  @keyframes slideInLeft {
+  0% {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  visibility: visible;
+  }
+  100% {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  } 
+   
   
-  .hero-btn {
-    background-color: #3d0951;
-    color: white;
-    padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    transition: 0.3s;
-    font-family: "Montserrat", sans-serif;
-    margin-right: 75%;
-  }
-  .hero-btn:hover{
-    background-color:rgba(108, 84, 125, 0.667);
-    color:  #3d0951;
-  }
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    }
+    @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    } 

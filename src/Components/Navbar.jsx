@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"; // 🔥 This is required for
 
 function navbar() {
   return (
-    <Navbar expand="lg" className="navbar-custom"> 
+    <Navbar expand="lg" className="navbar-custom fadeIn"> 
       <Container>
         <Navbar.Brand href="#" style={{ color: "purple", fontWeight: "bold" }}>
           V's World
