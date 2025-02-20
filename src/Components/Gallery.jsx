@@ -1,17 +1,28 @@
 import React from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import './Gallery.css'
 import { useState } from "react";
-import Kim1 from "../Images/kim-taehyung-2.jpg";  // Add your image paths
-import Kim2 from "../Images/kim-taehyung-3.jpeg";
-import Kim3 from "../Images/kim-taehyung-1.avif";
-import Kim4 from "../Images/kim-taehyung-main.webp";
+import Kim1 from "../Images/KIM-1.jpg";  // Add your image paths
+import Kim2 from "../Images/KIM-2.jpg";
+import Kim3 from "../Images/KIM-3.jpg";
+import Kim4 from "../Images/KIM-4.jpeg";
+import Kim5 from "../Images/KIM-5.jpeg";
+import Kim6 from "../Images/KIM-6.jpeg";
+import Kim7 from "../Images/KIM-7.jpeg";
+// import Kim10 from "../Images/KIM-10.jpeg";
+
 
 const images = [
   { src: Kim1 },
   { src: Kim2 },
   { src: Kim3 },
   { src: Kim4 },
+  { src: Kim5 },
+  { src: Kim6 },
+  { src: Kim7 },
+  // { src: Kim8 },
+
 ];
 
 function Gallery() {
@@ -24,13 +35,13 @@ function Gallery() {
         Taehyung's Gallery 💜
       </h1>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="tae">
         {images.map((image, i) => (
-          <img
+          <img 
             key={i}
             src={image.src}
             alt={`Kim Taehyung ${i}`}
-            className="w-full h-60 object-cover rounded-lg cursor-pointer transition duration-300 hover:scale-105"
+            className="tae-img"
             onClick={() => {
               setOpen(true);
               setIndex(i);
