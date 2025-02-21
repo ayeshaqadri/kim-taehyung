@@ -2,7 +2,8 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url("../Images/kim-taehyung-main-2.jpg") no-repeat center center/cover;
+    background: url("../Images/kim-taehyung-main-2.jpg") no-repeat center center;
+    background-size: cover; /* ✅ Ensures full responsiveness */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,19 +11,25 @@
     padding: 10%;
 }
 
+/* 🔳 Dark Overlay for Contrast */
 .about-overlay {
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for contrast */
-    padding: 40px;
-    margin-left: 10%;
-    border-radius: 10px;
-    max-width: 700px;
+    background: rgba(0, 0, 0, 0.6); /* ✅ Improves readability */
+    /* padding: 40px; */
+    border-radius: 20px;
+    height: auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-title {
     font-size: 50px;
     font-weight: bold;
-    color: #530407; /* Purple theme */
+    color: #530407;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .about-text {
@@ -31,14 +38,57 @@
     color: #ffffff;
     line-height: 1.6;
     font-weight: 300;
+    max-width: 90%;
 }
 
-/* Responsive Design */
+.about-text span {
+    color: #ffb6c1;
+    font-family: fantasy;
+    transition: all 0.3s ease-in-out;
+}
+.about-text span:hover {
+    color: #ff69b4;
+    font-size: 110%;
+}
+
+@media (max-width: 1024px) {
+    .about-overlay {
+        max-width: 80%;
+        padding: 30px;
+    }
+    .about-title {
+        font-size: 42px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+}
+
 @media (max-width: 768px) {
+    .about-overlay {
+        max-width: 90%;
+        padding: 25px;
+    }
     .about-title {
         font-size: 36px;
     }
     .about-text {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 5%;
+    }
+    .about-overlay {
+        max-width: 95%;
+        padding: 20px;
+    }
+    .about-title {
+        font-size: 30px;
+    }
+    .about-text {
+        font-size: 14px;
     }
 }
