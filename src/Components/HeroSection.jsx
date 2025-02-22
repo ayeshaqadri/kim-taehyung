@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <div className="hero">
       <div className="hero-content slideInLeft">
-        <h1>Welcome to V's World</h1>
+        <h1>Welcome to<br /> V's World</h1>
         <p>Explore the artistry and talent of Kim Taehyung</p>
         <button className="btn-1 btn-purple">
           <span>Discover More</span>
