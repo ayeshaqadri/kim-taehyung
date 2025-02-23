@@ -1,9 +1,10 @@
 .about-section {
     position: relative;
     width: 100%;
-    height:86.7vh;
+    height: 86.7vh;
     background: url("../Images/kim-taehyung-main-2.jpg") no-repeat center center;
-    background-size: cover; /* ✅ Ensures full responsiveness */
+    background-size: cover;
+    /* ✅ Ensures full responsiveness */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,7 +14,8 @@
 
 /* 🔳 Dark Overlay for Contrast */
 .about-overlay {
-    background: rgba(0, 0, 0, 0.6); /* ✅ Improves readability */
+    background: rgba(0, 0, 0, 0.6);
+    /* ✅ Improves readability */
     /* padding: 40px; */
     border-radius: 20px;
     height: auto;
@@ -46,9 +48,113 @@
     font-family: fantasy;
     transition: all 0.3s ease-in-out;
 }
+
 .about-text span:hover {
     color: #ff69b4;
     font-size: 110%;
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+    -webkit-animation-duration: .75s;
+    animation-duration: .75s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1);
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(.9, .9, .9);
+        transform: scale3d(.9, .9, .9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+        -webkit-transform: scale3d(.97, .97, .97);
+        transform: scale3d(.97, .97, .97);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
 }
 
 @media (max-width: 1496px) {
@@ -59,19 +165,22 @@
         height: 150%;
         width: 100%;
     }
+
     .about-title {
         font-size: 30px;
     }
+
     .about-text {
         font-size: 15px;
-        
-   }
-   .about-section {
-    position: relative;
-    width: 100%;
-    height:84vh;
 
-}
+    }
+
+    .about-section {
+        position: relative;
+        width: 100%;
+        height: 84vh;
+
+    }
 }
 
 @media (min-width: 420px) and (max-width: 768px) {
@@ -79,25 +188,29 @@
     .about-section {
         padding: 5%;
     }
+
     .about-overlay {
         max-width: 95%;
         padding: 1px;
         height: 105%;
         width: 90%;
     }
+
     .about-title {
         font-size: 30px;
     }
+
     .about-text {
         font-size: 12px;
-        
-   }
-   .about-section {
-    position: relative;
-    width: 100%;
-    height:90.8vh;
 
-}
+    }
+
+    .about-section {
+        position: relative;
+        width: 100%;
+        height: 90.8vh;
+
+    }
 }
 
 @media (max-width: 420px) {
@@ -108,17 +221,20 @@
         height: 100%;
         width: 100%;
     }
+
     .about-title {
         font-size: 30px;
     }
+
     .about-text {
         font-size: 10px;
-        
-   }
-   .about-section {
-    position: relative;
-    width: 100%;
-    height:89.7vh;
 
-}
+    }
+
+    .about-section {
+        position: relative;
+        width: 100%;
+        height: 89.7vh;
+
+    }
 }

@@ -1,55 +1,87 @@
 .tae {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tae-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tae-img:hover {
+  transform: scale(1.05);
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
   }
-  
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  .tae {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .tae {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .tae {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .tae-img {
-    width: 100%;
-    height: 250px;
+    width: 90%;
+    height: 150px;
     object-fit: cover;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
+    padding-left: 10%;
   }
-  
-  .tae-img:hover {
-    transform: scale(1.05);
+
+  .tae {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
   }
-  
-  @media (min-width: 600px) and (max-width: 768px) {
-    .tae {
-      grid-template-columns: repeat(4, 1fr);
-    }
-  }
-  
-  @media (min-width: 769px) {
-    .tae {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .tae {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .tae-img {
-      width: 90%;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 20px;
-      padding-left: 10%;
-    }
-  
-    .tae {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 10px;
-    }
-  }
-  
+}

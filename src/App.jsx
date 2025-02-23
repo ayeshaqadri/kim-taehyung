@@ -10,7 +10,6 @@ function App() {
   return (
     <Router>
       <NavbarComponent />
-
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<About />} />

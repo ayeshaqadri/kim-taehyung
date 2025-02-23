@@ -3,7 +3,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import './Gallery.css'
 import { useState } from "react";
-import Kim1 from "../Images/KIM-1.jpg";  
+import Kim1 from "../Images/KIM-1.jpg";
 import Kim2 from "../Images/KIM-2.jpg";
 import Kim3 from "../Images/KIM-3.jpg";
 import Kim4 from "../Images/KIM-4.jpeg";
@@ -54,10 +54,10 @@ const images = [
   { src: Kim9 },
   { src: Kim10 },
   { src: Kim11 },
-  { src: Kim12},
+  { src: Kim12 },
   { src: Kim13 },
   { src: Kim14 },
-  { src: Kim15},
+  { src: Kim15 },
   { src: Kim16 },
   { src: Kim17 },
   { src: Kim18 },
@@ -93,13 +93,13 @@ function Gallery() {
         Taehyung's Gallery 💜
       </h1>
 
-      <div className="tae">
+      <div className="tae ">
         {images.map((image, i) => (
-          <img 
+          <img
             key={i}
             src={image.src}
             alt={`Kim Taehyung ${i}`}
-            className="tae-img"
+            className="tae-img zoomIn"
             onClick={() => {
               setOpen(true);
               setIndex(i);
