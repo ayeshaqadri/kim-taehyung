@@ -1,44 +1,52 @@
 .hero {
-  background: url("../Images/kim-taehyung-main.webp") no-repeat center center;
-  background-size: 100%; /* Reduce image size */
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 86.8vh;
+  background: url("../Images/main-1.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 86.7vh;
+  background-position: center top;
   display: flex;
   align-items: center;
   color: rgb(0, 0, 0);
 }
+.hero-content {
+  text-align: left;
+  color: #3d0951;
+  margin-left: 3%;
+}
 
-  .hero-content {
-    text-align: center;
-    color: white;
-    margin-left: 3%;
-    color: #3d0951;
-  }
-  
-  .hero-content h1 {
-    font-size: 48px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    text-transform: uppercase; 
-    font-family: "Great Vibes", cursive; 
+.hero-content h1 {
+  font-size: 52px; 
+  font-weight: 900;
+  text-transform: uppercase;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 2px; 
+}
 
-  }
-  
-  .hero-content p {
-    font-size: 18px;
-    margin-bottom: 20px;
-    margin-right: 40%;
-    font-family: "Montserrat", sans-serif;
-  }
+.hero-content p {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5; 
+}
 
-  button {
-    margin: 20px;
-    margin-right: 160% ;
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #3d0951;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
 
-  }
+button:hover {
+  background-color: #5a0b7e;
+  transform: scale(1.05);
+}
+
   .btn-1 {
-    width: 130px;
+    width: 150px;
     height: 40px;
     color: #fff;
     border-radius: 5px;
@@ -55,7 +63,7 @@
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
-/* 8 */
+
 .btn-purple {
   background-color: #f0ecfc;
 background-image: linear-gradient(315deg, #76349d 0%, #3d0951 74%);
@@ -171,3 +179,43 @@ background-image: linear-gradient(315deg, #76349d 0%, #3d0951 74%);
     0% {opacity: 0;}
     100% {opacity: 1;}
     } 
+
+
+
+    /* small screeeeeen */
+    @media (max-width: 600px) {
+      .hero {
+        background: url("../Images/KIM-9.jpg") no-repeat center center;
+        background-size: cover;
+        height: 90vh;
+        background-position: center top;
+       
+
+      }
+      .hero-content {
+        text-align: left;
+        color: rgb(164, 159, 159);
+        margin-left: 3%;
+        margin-top: 30%;
+      }
+      
+      .hero-content h1 {
+        font-size: 40px; 
+        font-weight: 700;
+ 
+      }
+      
+      .hero-content p {
+        font-size: 15px;
+        color: white;
+      }
+      .btn-purple {
+        background-image: linear-gradient(315deg, #716976 0%, #4a454d 74%);
+      }
+      
+    }
+    @media (max-width: 768px) {
+
+    }
+    
+    

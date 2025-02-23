@@ -48,8 +48,10 @@ body {
     padding: 10px;
   }
 
-  .navbar-toggler {
-    border: 1px solid white;
+  .navbar-toggler:hover {
+    border: 1px solid rgb(110, 104, 104);
+    background: #000;
+    color: white;
   }
 }
 
@@ -67,9 +69,18 @@ body {
     width: 60%;
     max-width: 150px;
   }
-  /* .Navbar.Toggle{
-    padding: 0px;
-  } */
+/* Navbar Links */
+.navbar-custom .nav-link {
+  color: #ffffff !important;
+  font-weight: bold;
+  transition: 0.3s;
+  padding: 10px 15px;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #575359 !important;
+}
+
 }
 @media (max-width: 768px) {
   .navbar-custom {
