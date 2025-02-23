@@ -23,6 +23,23 @@ import Kim17 from "../Images/KIM-17.jpg";
 import Kim18 from "../Images/KIM-18.jpg";
 import Kim19 from "../Images/KIM-19.jpg";
 import Kim20 from "../Images/KIM-20.jpg";
+import Kim21 from "../Images/KIM-21.jpg";
+import Kim22 from "../Images/KIM-22.jpg";
+import Kim23 from "../Images/KIM-23.jpg";
+import Kim24 from "../Images/KIM-24.jpg";
+import Kim25 from "../Images/KIM-25.jpg";
+import Kim26 from "../Images/KIM-26.jpg";
+import Kim27 from "../Images/KIM-27.jpg";
+import Kim28 from "../Images/KIM-28.jpg";
+import Kim29 from "../Images/KIM-29.jpg";
+import Kim30 from "../Images/KIM-30.jpg";
+import Kim31 from "../Images/KIM-31.jpg";
+import Kim32 from "../Images/KIM-32.jpg";
+import Kim33 from "../Images/KIM-33.jpg";
+import Kim34 from "../Images/KIM-34.jpg";
+import Kim35 from "../Images/KIM-35.jpg";
+import Kim36 from "../Images/KIM-36.jpg";
+import Kim37 from "../Images/KIM-37.jpg";
 
 
 const images = [
@@ -46,6 +63,23 @@ const images = [
   { src: Kim18 },
   { src: Kim19 },
   { src: Kim20 },
+  { src: Kim21 },
+  { src: Kim22 },
+  { src: Kim23 },
+  { src: Kim24 },
+  { src: Kim25 },
+  { src: Kim26 },
+  { src: Kim27 },
+  { src: Kim28 },
+  { src: Kim29 },
+  { src: Kim30 },
+  { src: Kim31 },
+  { src: Kim32 },
+  { src: Kim33 },
+  { src: Kim34 },
+  { src: Kim35 },
+  { src: Kim36 },
+  { src: Kim37 },
 
 ];
 
